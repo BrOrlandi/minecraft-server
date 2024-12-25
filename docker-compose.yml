@@ -7,13 +7,15 @@ services:
       - "25565:25565"
     environment:
       EULA: "TRUE"
-      # PVP: "false"
+      PVP: "false"
       # TYPE: "PAPER"
       SERVER_NAME: "BeMinecraft"
       VERSION: "1.21.4"
       RCON_PASSWORD: "beuni"
       # OPS: |
       #   brorlandi
+      ONLINE_MODE: "false"
+      MOTD: "BeMinecraft"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data:/data
