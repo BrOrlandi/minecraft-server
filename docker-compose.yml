@@ -12,8 +12,8 @@ services:
       SERVER_NAME: "BeMinecraft"
       VERSION: "1.21.4"
       RCON_PASSWORD: "beuni"
-      # OPS: |
-      #   brorlandi
+      OPS: |
+        brorlandi
       ONLINE_MODE: "false"
       MOTD: "BeMinecraft"
     volumes:
