@@ -18,6 +18,8 @@ services:
       ENFORCE_WHITELIST: "TRUE"
       ONLINE_MODE: "false"
       MOTD: "BeMinecraft"
+      ICON: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA86ZCZHQq9nJJtM9L7YPZ4tlEFXCzVafO5A&s"
+      OVERRIDE_ICON: "TRUE"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data:/data
