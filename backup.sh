@@ -53,6 +53,16 @@ while getopts ":ac:v:o:r:d:" opt; do
   esac
 done
 
+echo "Backup started at $(date '+%Y-%m-%d %H:%M:%S')"
+echo "Backup parameters:"
+echo "  Volumes: $VOLUMES"
+echo "  All volumes: $ALL"
+echo "  Output directory: $DIR"
+echo "  Container: $CONTAINER"
+echo "  Clear output directory: $CLEAR"
+echo "  Delete files older than: $DAYSBACK days"
+
+
 # Verify required parameters
 if [[ -z "$VOLUMES" && "$ALL" != "true" ]]; then
     echo "Error: Parameter -v (volumes) or -a (all) must be set."

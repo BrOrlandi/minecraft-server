@@ -4,16 +4,18 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - "25565:25565"
+      - "63571:63571"
     environment:
+      SERVER_PORT: "63571"
       EULA: "TRUE"
       PVP: "false"
       # TYPE: "PAPER"
       SERVER_NAME: "BeMinecraft"
       VERSION: "1.21.4"
       RCON_PASSWORD: "beuni"
-      OPS: |
-        brorlandi
+      OPS: ""
+      ENABLE_WHITELIST: "TRUE"
+      ENFORCE_WHITELIST: "TRUE"
       ONLINE_MODE: "false"
       MOTD: "BeMinecraft"
     volumes:

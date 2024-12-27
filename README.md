@@ -1,5 +1,9 @@
 # Minecraft Server
 
+### Server address
+
+> brorlandi.xyz:63571
+
 ### RCON console:
 
 ```bash
@@ -34,5 +38,5 @@ crontab -e
 
 ```bash
 # -d 7: keep 7 days of backups
-0 0,12 * * * /home/ubuntu/minecraft-server/backup.sh -a -c minecraft-server_mc_1 -o /home/ubuntu/minecraft-server/backups -r -d 7
+0,30 * * * * /home/ubuntu/minecraft-server/backup.sh -d 15 -a -c minecraft-server_mc_1 -o /home/ubuntu/minecraft-server/backups
 ```
